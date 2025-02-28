@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile App Interface</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .text-sm {
+            font-size: 12px !important;
+        }
+        .rounded-full{
+            width: 50px !important;
+            height: 50px !important;
+            text-align: center !important;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-gray-800">
+    <div class="max-w-md mx-auto bg-white rounded-lg shadow-md overflow-hidden"> <!-- Top Buttons -->
+        <div class="flex justify-around py-4 bg-purple-100">
+            <div class="flex flex-col items-center">
+                <div class="bg-purple-600 text-white p-3 rounded-full"><a href="qrCodeGenerator.html"> <i class="fas fa-mobile-alt"></i> </div> <span
+                    class="mt-2 text-sm">To Mobile Number</span></a>
+            </div>
+            <div class="flex flex-col items-center">
+                <div class="bg-purple-600 text-white p-3 rounded-full"> <i class="fas fa-university"></i> </div> <span
+                    class="mt-2 text-sm">To Bank/UPI ID</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <div class="bg-purple-600 text-white p-3 rounded-full"> <i class="fas fa-user"></i> </div> <span
+                    class="mt-2 text-sm">To Self Account</span>
+            </div>
+        </div> <!-- Check Account Balance -->
+        <div class="px-4 py-2">
+            <div class="flex items-center border border-gray-300 rounded-lg overflow-hidden"> <input type="text"
+                    placeholder="Check account balance" class="flex-grow px-4 py-2 focus:outline-none"> <button
+                    class="bg-purple-600 text-white px-4 py-2">Check</button> </div>
+        </div> <!-- Recharge & Pay Bills -->
+        <div class="px-4 py-2">
+            <h2 class="text-lg font-medium mb-2">Recharge & Pay Bills</h2>
+            <div class="grid grid-cols-4 gap-4">
+                <div class="flex flex-col items-center">
+                    <div class="bg-gray-200 p-3 rounded-full"> <i class="fas fa-mobile-alt"></i> </div> <span
+                        class="mt-2 text-sm">Mobile Recharge</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <a href="scanner.html"> <div class="bg-gray-200 p-3 rounded-full"> <i class="fa fa-qrcode" aria-hidden="true"></i></div>
+                     <span
+                        class="mt-2 text-sm">scan</span></a>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="bg-gray-200 p-3 rounded-full"> <i class="fas fa-lightbulb"></i> </div> <span
+                        class="mt-2 text-sm">Electricity</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="bg-gray-200 p-3 rounded-full"> <i class="fas fa-credit-card"></i> </div> <span
+                        class="mt-2 text-sm">Credit Card Bill</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="bg-gray-200 p-3 rounded-full relative"> <i class="fas fa-home"></i> <span
+                            class="absolute top-0 right-0 bg-red-500 text-white text-xs rounded-full px-1">New</span>
+                    </div> <span class="mt-2 text-sm">Rent Payment</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="bg-gray-200 p-3 rounded-full"> <i class="fas fa-hand-holding-usd"></i> </div> <span
+                        class="mt-2 text-sm">Loan Repayment</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="bg-gray-200 p-3 rounded-full"> <i class="fas fa-gas-pump"></i> </div> <span
+                        class="mt-2 text-sm">Book A Cylinder</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="bg-gray-200 p-3 rounded-full"> <i class="fas fa-ellipsis-h"></i> </div> <span
+                        class="mt-2 text-sm">See All</span>
+                </div>
+            </div>
+        </div> <!-- Offers, Rewards, Refer & Earn -->
+        <div class="px-4 py-2 flex justify-around"> <button
+                class="bg-purple-600 text-white px-4 py-2 rounded-lg">Offers</button> <button
+                class="bg-purple-600 text-white px-4 py-2 rounded-lg">Rewards</button> <button
+                class="bg-purple-600 text-white px-4 py-2 rounded-lg">Refer & earn</button> </div>
+        <!-- People and Groups -->
+        <div class="px-4 py-2">
+            <h2 class="text-lg font-medium mb-2">People and groups</h2>
+            <div class="grid grid-cols-4 gap-4">
+                <div class="flex flex-col items-center">
+                    <div class="bg-gray-200 p-3 rounded-full"> <i class="fas fa-plus"></i> </div> <span
+                        class="mt-2 text-sm">Name</span>
+                </div>
+                <div class="flex flex-col items-center"> <img src="https://placehold.co/50x50" alt="Person 1"
+                        class="rounded-full"> <span class="mt-2 text-sm">Name</span> </div>
+                <div class="flex flex-col items-center"> <img src="https://placehold.co/50x50" alt="Person 2"
+                        class="rounded-full"> <span class="mt-2 text-sm">Name</span> </div>
+                <div class="flex flex-col items-center"> <img src="https://placehold.co/50x50" alt="Person 3"
+                        class="rounded-full"> <span class="mt-2 text-sm">Name</span> </div>
+                <div class="flex flex-col items-center"> <img src="https://placehold.co/50x50" alt="Person 4"
+                        class="rounded-full"> <span class="mt-2 text-sm">Name</span> </div>
+                <div class="flex flex-col items-center"> <img src="https://placehold.co/50x50" alt="Person 5"
+                        class="rounded-full"> <span class="mt-2 text-sm">Name</span> </div>
+                <div class="flex flex-col items-center"> <img src="https://placehold.co/50x50" alt="Person 6"
+                        class="rounded-full"> <span class="mt-2 text-sm">Name</span> </div>
+                <div class="flex flex-col items-center"> <img src="https://placehold.co/50x50" alt="Person 7"
+                        class="rounded-full"> <span class="mt-2 text-sm">Name</span> </div>
+            </div>
+        </div> <!-- Bottom Navigation -->
+        <div class="flex justify-around py-4 bg-purple-100">
+            <div class="flex flex-col items-center"> <i class="fas fa-home text-purple-600"></i> <span
+                    class="mt-1 text-sm text-purple-600">Home</span> </div>
+            <div class="flex flex-col items-center"> <i class="fas fa-wallet text-gray-400"></i> <span
+                    class="mt-1 text-sm text-gray-400">Wallet</span> </div>
+            <div class="flex flex-col items-center"> <i class="fas fa-ellipsis-h text-gray-400"></i> <span
+                    class="mt-1 text-sm text-gray-400">Explore</span> </div>
+            <div class="flex flex-col items-center"> <i class="fas fa-user text-gray-400"></i> <span
+                    class="mt-1 text-sm text-gray-400">Account</span> </div>
+        </div>
+    </div>
+</body>
+
+</html>
